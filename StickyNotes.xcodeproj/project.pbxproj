@@ -23,6 +23,14 @@
 		ACF7004A16FFD8CC00CF9A4D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACF7002516FFD8CC00CF9A4D /* Foundation.framework */; };
 		ACF7005216FFD8CC00CF9A4D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ACF7005016FFD8CC00CF9A4D /* InfoPlist.strings */; };
 		ACF7005516FFD8CC00CF9A4D /* StickyNotesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF7005416FFD8CC00CF9A4D /* StickyNotesTests.m */; };
+		ACF7005F16FFD8DD00CF9A4D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACF7005E16FFD8DD00CF9A4D /* CoreLocation.framework */; };
+		ACF7006116FFD8E500CF9A4D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACF7006016FFD8E500CF9A4D /* MapKit.framework */; };
+		ACF7006316FFD8EE00CF9A4D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACF7006216FFD8EE00CF9A4D /* CoreData.framework */; };
+		ACF7006616FFDA4F00CF9A4D /* BTLTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF7006516FFDA4F00CF9A4D /* BTLTableViewController.m */; };
+		ACF7006C16FFDB8100CF9A4D /* BTLLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF7006B16FFDB8100CF9A4D /* BTLLocationManager.m */; };
+		ACF7006F16FFDBF300CF9A4D /* Notes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ACF7006D16FFDBF300CF9A4D /* Notes.xcdatamodeld */; };
+		ACF7007216FFDCAC00CF9A4D /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF7007116FFDCAC00CF9A4D /* Note.m */; };
+		ACF7007516FFFF4D00CF9A4D /* BTLNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF7007416FFFF4C00CF9A4D /* BTLNoteViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +66,18 @@
 		ACF7005116FFD8CC00CF9A4D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		ACF7005316FFD8CC00CF9A4D /* StickyNotesTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StickyNotesTests.h; sourceTree = "<group>"; };
 		ACF7005416FFD8CC00CF9A4D /* StickyNotesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StickyNotesTests.m; sourceTree = "<group>"; };
+		ACF7005E16FFD8DD00CF9A4D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		ACF7006016FFD8E500CF9A4D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		ACF7006216FFD8EE00CF9A4D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		ACF7006416FFDA4F00CF9A4D /* BTLTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTLTableViewController.h; sourceTree = "<group>"; };
+		ACF7006516FFDA4F00CF9A4D /* BTLTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTLTableViewController.m; sourceTree = "<group>"; };
+		ACF7006A16FFDB8100CF9A4D /* BTLLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTLLocationManager.h; sourceTree = "<group>"; };
+		ACF7006B16FFDB8100CF9A4D /* BTLLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTLLocationManager.m; sourceTree = "<group>"; };
+		ACF7006E16FFDBF300CF9A4D /* Notes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Notes.xcdatamodel; sourceTree = "<group>"; };
+		ACF7007016FFDCAC00CF9A4D /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Note.h; sourceTree = "<group>"; };
+		ACF7007116FFDCAC00CF9A4D /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Note.m; sourceTree = "<group>"; };
+		ACF7007316FFFF4C00CF9A4D /* BTLNoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTLNoteViewController.h; sourceTree = "<group>"; };
+		ACF7007416FFFF4C00CF9A4D /* BTLNoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTLNoteViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +85,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACF7006316FFD8EE00CF9A4D /* CoreData.framework in Frameworks */,
+				ACF7006116FFD8E500CF9A4D /* MapKit.framework in Frameworks */,
+				ACF7005F16FFD8DD00CF9A4D /* CoreLocation.framework in Frameworks */,
 				ACF7002416FFD8CC00CF9A4D /* UIKit.framework in Frameworks */,
 				ACF7002616FFD8CC00CF9A4D /* Foundation.framework in Frameworks */,
 				ACF7002816FFD8CC00CF9A4D /* CoreGraphics.framework in Frameworks */,
@@ -87,6 +110,9 @@
 		ACF7001716FFD8CC00CF9A4D = {
 			isa = PBXGroup;
 			children = (
+				ACF7006216FFD8EE00CF9A4D /* CoreData.framework */,
+				ACF7006016FFD8E500CF9A4D /* MapKit.framework */,
+				ACF7005E16FFD8DD00CF9A4D /* CoreLocation.framework */,
 				ACF7002916FFD8CC00CF9A4D /* StickyNotes */,
 				ACF7004D16FFD8CC00CF9A4D /* StickyNotesTests */,
 				ACF7002216FFD8CC00CF9A4D /* Frameworks */,
@@ -123,6 +149,15 @@
 				ACF7003E16FFD8CC00CF9A4D /* BTLViewController.h */,
 				ACF7003F16FFD8CC00CF9A4D /* BTLViewController.m */,
 				ACF7002A16FFD8CC00CF9A4D /* Supporting Files */,
+				ACF7006416FFDA4F00CF9A4D /* BTLTableViewController.h */,
+				ACF7006516FFDA4F00CF9A4D /* BTLTableViewController.m */,
+				ACF7006A16FFDB8100CF9A4D /* BTLLocationManager.h */,
+				ACF7006B16FFDB8100CF9A4D /* BTLLocationManager.m */,
+				ACF7006D16FFDBF300CF9A4D /* Notes.xcdatamodeld */,
+				ACF7007016FFDCAC00CF9A4D /* Note.h */,
+				ACF7007116FFDCAC00CF9A4D /* Note.m */,
+				ACF7007316FFFF4C00CF9A4D /* BTLNoteViewController.h */,
+				ACF7007416FFFF4C00CF9A4D /* BTLNoteViewController.m */,
 			);
 			path = StickyNotes;
 			sourceTree = "<group>";
@@ -274,6 +309,11 @@
 				ACF7003016FFD8CC00CF9A4D /* main.m in Sources */,
 				ACF7003416FFD8CC00CF9A4D /* BTLAppDelegate.m in Sources */,
 				ACF7004016FFD8CC00CF9A4D /* BTLViewController.m in Sources */,
+				ACF7006616FFDA4F00CF9A4D /* BTLTableViewController.m in Sources */,
+				ACF7006C16FFDB8100CF9A4D /* BTLLocationManager.m in Sources */,
+				ACF7006F16FFDBF300CF9A4D /* Notes.xcdatamodeld in Sources */,
+				ACF7007216FFDCAC00CF9A4D /* Note.m in Sources */,
+				ACF7007516FFFF4D00CF9A4D /* BTLNoteViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,6 +504,19 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		ACF7006D16FFDBF300CF9A4D /* Notes.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				ACF7006E16FFDBF300CF9A4D /* Notes.xcdatamodel */,
+			);
+			currentVersion = ACF7006E16FFDBF300CF9A4D /* Notes.xcdatamodel */;
+			path = Notes.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = ACF7001816FFD8CC00CF9A4D /* Project object */;
 }
