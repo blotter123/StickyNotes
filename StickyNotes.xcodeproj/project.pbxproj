@@ -1,0 +1,469 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ACF7002416FFD8CC00CF9A4D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACF7002316FFD8CC00CF9A4D /* UIKit.framework */; };
+		ACF7002616FFD8CC00CF9A4D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACF7002516FFD8CC00CF9A4D /* Foundation.framework */; };
+		ACF7002816FFD8CC00CF9A4D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACF7002716FFD8CC00CF9A4D /* CoreGraphics.framework */; };
+		ACF7002E16FFD8CC00CF9A4D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ACF7002C16FFD8CC00CF9A4D /* InfoPlist.strings */; };
+		ACF7003016FFD8CC00CF9A4D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF7002F16FFD8CC00CF9A4D /* main.m */; };
+		ACF7003416FFD8CC00CF9A4D /* BTLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF7003316FFD8CC00CF9A4D /* BTLAppDelegate.m */; };
+		ACF7003616FFD8CC00CF9A4D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = ACF7003516FFD8CC00CF9A4D /* Default.png */; };
+		ACF7003816FFD8CC00CF9A4D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ACF7003716FFD8CC00CF9A4D /* Default@2x.png */; };
+		ACF7003A16FFD8CC00CF9A4D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ACF7003916FFD8CC00CF9A4D /* Default-568h@2x.png */; };
+		ACF7003D16FFD8CC00CF9A4D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACF7003B16FFD8CC00CF9A4D /* MainStoryboard.storyboard */; };
+		ACF7004016FFD8CC00CF9A4D /* BTLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF7003F16FFD8CC00CF9A4D /* BTLViewController.m */; };
+		ACF7004816FFD8CC00CF9A4D /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACF7004716FFD8CC00CF9A4D /* SenTestingKit.framework */; };
+		ACF7004916FFD8CC00CF9A4D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACF7002316FFD8CC00CF9A4D /* UIKit.framework */; };
+		ACF7004A16FFD8CC00CF9A4D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACF7002516FFD8CC00CF9A4D /* Foundation.framework */; };
+		ACF7005216FFD8CC00CF9A4D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ACF7005016FFD8CC00CF9A4D /* InfoPlist.strings */; };
+		ACF7005516FFD8CC00CF9A4D /* StickyNotesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF7005416FFD8CC00CF9A4D /* StickyNotesTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ACF7004B16FFD8CC00CF9A4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACF7001816FFD8CC00CF9A4D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACF7001F16FFD8CC00CF9A4D;
+			remoteInfo = StickyNotes;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ACF7002016FFD8CC00CF9A4D /* StickyNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StickyNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACF7002316FFD8CC00CF9A4D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		ACF7002516FFD8CC00CF9A4D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		ACF7002716FFD8CC00CF9A4D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		ACF7002B16FFD8CC00CF9A4D /* StickyNotes-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StickyNotes-Info.plist"; sourceTree = "<group>"; };
+		ACF7002D16FFD8CC00CF9A4D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		ACF7002F16FFD8CC00CF9A4D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ACF7003116FFD8CC00CF9A4D /* StickyNotes-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StickyNotes-Prefix.pch"; sourceTree = "<group>"; };
+		ACF7003216FFD8CC00CF9A4D /* BTLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTLAppDelegate.h; sourceTree = "<group>"; };
+		ACF7003316FFD8CC00CF9A4D /* BTLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTLAppDelegate.m; sourceTree = "<group>"; };
+		ACF7003516FFD8CC00CF9A4D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		ACF7003716FFD8CC00CF9A4D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		ACF7003916FFD8CC00CF9A4D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		ACF7003C16FFD8CC00CF9A4D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		ACF7003E16FFD8CC00CF9A4D /* BTLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTLViewController.h; sourceTree = "<group>"; };
+		ACF7003F16FFD8CC00CF9A4D /* BTLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTLViewController.m; sourceTree = "<group>"; };
+		ACF7004616FFD8CC00CF9A4D /* StickyNotesTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StickyNotesTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACF7004716FFD8CC00CF9A4D /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		ACF7004F16FFD8CC00CF9A4D /* StickyNotesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StickyNotesTests-Info.plist"; sourceTree = "<group>"; };
+		ACF7005116FFD8CC00CF9A4D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		ACF7005316FFD8CC00CF9A4D /* StickyNotesTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StickyNotesTests.h; sourceTree = "<group>"; };
+		ACF7005416FFD8CC00CF9A4D /* StickyNotesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StickyNotesTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ACF7001D16FFD8CC00CF9A4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACF7002416FFD8CC00CF9A4D /* UIKit.framework in Frameworks */,
+				ACF7002616FFD8CC00CF9A4D /* Foundation.framework in Frameworks */,
+				ACF7002816FFD8CC00CF9A4D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACF7004216FFD8CC00CF9A4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACF7004816FFD8CC00CF9A4D /* SenTestingKit.framework in Frameworks */,
+				ACF7004916FFD8CC00CF9A4D /* UIKit.framework in Frameworks */,
+				ACF7004A16FFD8CC00CF9A4D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ACF7001716FFD8CC00CF9A4D = {
+			isa = PBXGroup;
+			children = (
+				ACF7002916FFD8CC00CF9A4D /* StickyNotes */,
+				ACF7004D16FFD8CC00CF9A4D /* StickyNotesTests */,
+				ACF7002216FFD8CC00CF9A4D /* Frameworks */,
+				ACF7002116FFD8CC00CF9A4D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ACF7002116FFD8CC00CF9A4D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ACF7002016FFD8CC00CF9A4D /* StickyNotes.app */,
+				ACF7004616FFD8CC00CF9A4D /* StickyNotesTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ACF7002216FFD8CC00CF9A4D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACF7002316FFD8CC00CF9A4D /* UIKit.framework */,
+				ACF7002516FFD8CC00CF9A4D /* Foundation.framework */,
+				ACF7002716FFD8CC00CF9A4D /* CoreGraphics.framework */,
+				ACF7004716FFD8CC00CF9A4D /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ACF7002916FFD8CC00CF9A4D /* StickyNotes */ = {
+			isa = PBXGroup;
+			children = (
+				ACF7003216FFD8CC00CF9A4D /* BTLAppDelegate.h */,
+				ACF7003316FFD8CC00CF9A4D /* BTLAppDelegate.m */,
+				ACF7003B16FFD8CC00CF9A4D /* MainStoryboard.storyboard */,
+				ACF7003E16FFD8CC00CF9A4D /* BTLViewController.h */,
+				ACF7003F16FFD8CC00CF9A4D /* BTLViewController.m */,
+				ACF7002A16FFD8CC00CF9A4D /* Supporting Files */,
+			);
+			path = StickyNotes;
+			sourceTree = "<group>";
+		};
+		ACF7002A16FFD8CC00CF9A4D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ACF7002B16FFD8CC00CF9A4D /* StickyNotes-Info.plist */,
+				ACF7002C16FFD8CC00CF9A4D /* InfoPlist.strings */,
+				ACF7002F16FFD8CC00CF9A4D /* main.m */,
+				ACF7003116FFD8CC00CF9A4D /* StickyNotes-Prefix.pch */,
+				ACF7003516FFD8CC00CF9A4D /* Default.png */,
+				ACF7003716FFD8CC00CF9A4D /* Default@2x.png */,
+				ACF7003916FFD8CC00CF9A4D /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ACF7004D16FFD8CC00CF9A4D /* StickyNotesTests */ = {
+			isa = PBXGroup;
+			children = (
+				ACF7005316FFD8CC00CF9A4D /* StickyNotesTests.h */,
+				ACF7005416FFD8CC00CF9A4D /* StickyNotesTests.m */,
+				ACF7004E16FFD8CC00CF9A4D /* Supporting Files */,
+			);
+			path = StickyNotesTests;
+			sourceTree = "<group>";
+		};
+		ACF7004E16FFD8CC00CF9A4D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ACF7004F16FFD8CC00CF9A4D /* StickyNotesTests-Info.plist */,
+				ACF7005016FFD8CC00CF9A4D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ACF7001F16FFD8CC00CF9A4D /* StickyNotes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACF7005816FFD8CC00CF9A4D /* Build configuration list for PBXNativeTarget "StickyNotes" */;
+			buildPhases = (
+				ACF7001C16FFD8CC00CF9A4D /* Sources */,
+				ACF7001D16FFD8CC00CF9A4D /* Frameworks */,
+				ACF7001E16FFD8CC00CF9A4D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StickyNotes;
+			productName = StickyNotes;
+			productReference = ACF7002016FFD8CC00CF9A4D /* StickyNotes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ACF7004516FFD8CC00CF9A4D /* StickyNotesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACF7005B16FFD8CC00CF9A4D /* Build configuration list for PBXNativeTarget "StickyNotesTests" */;
+			buildPhases = (
+				ACF7004116FFD8CC00CF9A4D /* Sources */,
+				ACF7004216FFD8CC00CF9A4D /* Frameworks */,
+				ACF7004316FFD8CC00CF9A4D /* Resources */,
+				ACF7004416FFD8CC00CF9A4D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACF7004C16FFD8CC00CF9A4D /* PBXTargetDependency */,
+			);
+			name = StickyNotesTests;
+			productName = StickyNotesTests;
+			productReference = ACF7004616FFD8CC00CF9A4D /* StickyNotesTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ACF7001816FFD8CC00CF9A4D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BTL;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Benedikt Lotter";
+			};
+			buildConfigurationList = ACF7001B16FFD8CC00CF9A4D /* Build configuration list for PBXProject "StickyNotes" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = ACF7001716FFD8CC00CF9A4D;
+			productRefGroup = ACF7002116FFD8CC00CF9A4D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ACF7001F16FFD8CC00CF9A4D /* StickyNotes */,
+				ACF7004516FFD8CC00CF9A4D /* StickyNotesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ACF7001E16FFD8CC00CF9A4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACF7002E16FFD8CC00CF9A4D /* InfoPlist.strings in Resources */,
+				ACF7003616FFD8CC00CF9A4D /* Default.png in Resources */,
+				ACF7003816FFD8CC00CF9A4D /* Default@2x.png in Resources */,
+				ACF7003A16FFD8CC00CF9A4D /* Default-568h@2x.png in Resources */,
+				ACF7003D16FFD8CC00CF9A4D /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACF7004316FFD8CC00CF9A4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACF7005216FFD8CC00CF9A4D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		ACF7004416FFD8CC00CF9A4D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ACF7001C16FFD8CC00CF9A4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACF7003016FFD8CC00CF9A4D /* main.m in Sources */,
+				ACF7003416FFD8CC00CF9A4D /* BTLAppDelegate.m in Sources */,
+				ACF7004016FFD8CC00CF9A4D /* BTLViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACF7004116FFD8CC00CF9A4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACF7005516FFD8CC00CF9A4D /* StickyNotesTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ACF7004C16FFD8CC00CF9A4D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACF7001F16FFD8CC00CF9A4D /* StickyNotes */;
+			targetProxy = ACF7004B16FFD8CC00CF9A4D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ACF7002C16FFD8CC00CF9A4D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACF7002D16FFD8CC00CF9A4D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		ACF7003B16FFD8CC00CF9A4D /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACF7003C16FFD8CC00CF9A4D /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		ACF7005016FFD8CC00CF9A4D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACF7005116FFD8CC00CF9A4D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ACF7005616FFD8CC00CF9A4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		ACF7005716FFD8CC00CF9A4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ACF7005916FFD8CC00CF9A4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StickyNotes/StickyNotes-Prefix.pch";
+				INFOPLIST_FILE = "StickyNotes/StickyNotes-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		ACF7005A16FFD8CC00CF9A4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StickyNotes/StickyNotes-Prefix.pch";
+				INFOPLIST_FILE = "StickyNotes/StickyNotes-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		ACF7005C16FFD8CC00CF9A4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/StickyNotes.app/StickyNotes";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StickyNotes/StickyNotes-Prefix.pch";
+				INFOPLIST_FILE = "StickyNotesTests/StickyNotesTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		ACF7005D16FFD8CC00CF9A4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/StickyNotes.app/StickyNotes";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StickyNotes/StickyNotes-Prefix.pch";
+				INFOPLIST_FILE = "StickyNotesTests/StickyNotesTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ACF7001B16FFD8CC00CF9A4D /* Build configuration list for PBXProject "StickyNotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACF7005616FFD8CC00CF9A4D /* Debug */,
+				ACF7005716FFD8CC00CF9A4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACF7005816FFD8CC00CF9A4D /* Build configuration list for PBXNativeTarget "StickyNotes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACF7005916FFD8CC00CF9A4D /* Debug */,
+				ACF7005A16FFD8CC00CF9A4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ACF7005B16FFD8CC00CF9A4D /* Build configuration list for PBXNativeTarget "StickyNotesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACF7005C16FFD8CC00CF9A4D /* Debug */,
+				ACF7005D16FFD8CC00CF9A4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ACF7001816FFD8CC00CF9A4D /* Project object */;
+}
