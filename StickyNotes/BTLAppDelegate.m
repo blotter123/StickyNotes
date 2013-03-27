@@ -61,6 +61,8 @@
     UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
     BTLTableViewController *controller = (BTLTableViewController *)navigationController.topViewController;
     controller.managedObjectContext = self.managedObjectContext;
+    
+   
     return YES;
 }
 							

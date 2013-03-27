@@ -27,6 +27,9 @@
 
 @property (weak, nonatomic) IBOutlet UITextView *descriptionTextView;
 
+@property (strong) NSManagedObject *currentNote;
+
+
 
 
 

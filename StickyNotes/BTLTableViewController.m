@@ -42,8 +42,9 @@
 		exit(-1);  // Fail
 	}
     
-    self.title = @"Failed Banks";
-    self.title = @"My Notes";
+        self.title = @"My Notes";
+    
+    
 }
 
 - (void)viewDidUnload
@@ -136,7 +137,7 @@
     note.noteTitle = @"Test New Note";
     note.noteDescription = @"Test New Description";
     note.noteLatitude = [NSNumber numberWithDouble:currentLocation.coordinate.latitude];
-    note.noteLatitude = [NSNumber numberWithDouble:currentLocation.coordinate.longitude];
+    note.noteLongitude = [NSNumber numberWithDouble:currentLocation.coordinate.longitude];
     NSError *error;
     if (![context save:&error]) {
         NSLog(@"Whoops, couldn't save: %@", [error localizedDescription]);
@@ -210,14 +211,15 @@
     NSLog(@"prepareForSegue called");
     if ([[segue identifier] isEqualToString:@"ShowDetails"]) {
         BTLNoteViewController *noteViewController = [segue destinationViewController];
-        //alternatively:NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
         Note *note = [self.fetchedResultsController objectAtIndexPath:indexPath];
-        
+        NSManagedObject *selectedNote = [self.fetchedResultsController objectAtIndexPath:indexPath];
+        noteViewController.currentNote = selectedNote;
         if ([segue.identifier isEqualToString:@"ShowDetails"]) {
             [segue.destinationViewController setFields:note.noteTitle noteDescription:note.noteDescription latitude:note.noteLatitude longitude:note.noteLongitude objectId:note.objectID];
             
         }
+       
         
         noteViewController.delegate = self;
     }
@@ -234,6 +236,7 @@
     
     Note *note = (Note *)[context objectWithID:objId];
     note.noteTitle = titleString;
+    note.noteDescription = descriptionString;
     
     NSError *error;
     if (![context save:&error]) {

@@ -31,6 +31,7 @@
 		ACF7006F16FFDBF300CF9A4D /* Notes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ACF7006D16FFDBF300CF9A4D /* Notes.xcdatamodeld */; };
 		ACF7007216FFDCAC00CF9A4D /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF7007116FFDCAC00CF9A4D /* Note.m */; };
 		ACF7007516FFFF4D00CF9A4D /* BTLNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF7007416FFFF4C00CF9A4D /* BTLNoteViewController.m */; };
+		ACF700781702090F00CF9A4D /* BTLLocationSelectController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF700771702090F00CF9A4D /* BTLLocationSelectController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,8 @@
 		ACF7007116FFDCAC00CF9A4D /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Note.m; sourceTree = "<group>"; };
 		ACF7007316FFFF4C00CF9A4D /* BTLNoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTLNoteViewController.h; sourceTree = "<group>"; };
 		ACF7007416FFFF4C00CF9A4D /* BTLNoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTLNoteViewController.m; sourceTree = "<group>"; };
+		ACF700761702090E00CF9A4D /* BTLLocationSelectController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTLLocationSelectController.h; sourceTree = "<group>"; };
+		ACF700771702090F00CF9A4D /* BTLLocationSelectController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTLLocationSelectController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +161,8 @@
 				ACF7007116FFDCAC00CF9A4D /* Note.m */,
 				ACF7007316FFFF4C00CF9A4D /* BTLNoteViewController.h */,
 				ACF7007416FFFF4C00CF9A4D /* BTLNoteViewController.m */,
+				ACF700761702090E00CF9A4D /* BTLLocationSelectController.h */,
+				ACF700771702090F00CF9A4D /* BTLLocationSelectController.m */,
 			);
 			path = StickyNotes;
 			sourceTree = "<group>";
@@ -314,6 +319,7 @@
 				ACF7006F16FFDBF300CF9A4D /* Notes.xcdatamodeld in Sources */,
 				ACF7007216FFDCAC00CF9A4D /* Note.m in Sources */,
 				ACF7007516FFFF4D00CF9A4D /* BTLNoteViewController.m in Sources */,
+				ACF700781702090F00CF9A4D /* BTLLocationSelectController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,6 +500,7 @@
 				ACF7005A16FFD8CC00CF9A4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ACF7005B16FFD8CC00CF9A4D /* Build configuration list for PBXNativeTarget "StickyNotesTests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +509,7 @@
 				ACF7005D16FFD8CC00CF9A4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
