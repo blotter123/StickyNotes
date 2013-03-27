@@ -124,11 +124,14 @@
     return cell;
 }
 
+// creation, storage or new Note from button on tableView
 - (IBAction)newNote:(id)sender {
     
+    //get current location
     CLLocation *currentLocation = [BTLLocationManager sharedLocationManager].locationManager.location;
     NSLog(@"when new lat: %f,  when new lon:%f", currentLocation.coordinate.latitude, currentLocation.coordinate.longitude);
     
+    //save created note in context and persistent storage
     NSManagedObjectContext *context = [self managedObjectContext];
     
     Note *note = [NSEntityDescription
@@ -201,6 +204,7 @@
 
 
 - (void)controllerDidChangeContent:(NSFetchedResultsController *)controller {
+    
     // The fetch controller has sent all current change notifications, so tell the table view to process all updates.
     [self.tableView endUpdates];
 }
@@ -212,12 +216,15 @@
     if ([[segue identifier] isEqualToString:@"ShowDetails"]) {
         BTLNoteViewController *noteViewController = [segue destinationViewController];
         NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
+        
+        // find the Note object at the index in the fetchedResultsController
         Note *note = [self.fetchedResultsController objectAtIndexPath:indexPath];
         NSManagedObject *selectedNote = [self.fetchedResultsController objectAtIndexPath:indexPath];
+        
+        //set the NSManagedObject property currentNote of the noteViewController to the selectedNote
         noteViewController.currentNote = selectedNote;
         if ([segue.identifier isEqualToString:@"ShowDetails"]) {
             [segue.destinationViewController setFields:note.noteTitle noteDescription:note.noteDescription latitude:note.noteLatitude longitude:note.noteLongitude objectId:note.objectID];
-            
         }
        
         
@@ -230,13 +237,15 @@
 
 //method called when segue from noteViewController to tableViewController to pass updated information back.
 
-- (void)updateNote:(NSString*)descriptionString withTitle:(NSString *)titleString objectId:(NSManagedObjectID *)objId{
+- (void)updateNote:(NSString*)descriptionString withTitle:(NSString *)titleString objectId:(NSManagedObjectID *)objId latitude:(NSNumber *)lat longitude:(NSNumber *)lon{
     
     NSManagedObjectContext *context = [self managedObjectContext];
     
     Note *note = (Note *)[context objectWithID:objId];
     note.noteTitle = titleString;
     note.noteDescription = descriptionString;
+    note.noteLatitude = lat;
+    note.noteLongitude = lon;
     
     NSError *error;
     if (![context save:&error]) {

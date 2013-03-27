@@ -45,16 +45,14 @@
 
 - (IBAction)changeTitle:(id)sender {
     _currentTitle = self.titleTextField.text;
-    
-    
-    [self.delegate updateNote:self.descriptionTextView.text withTitle:self.titleTextField.text objectId:_currentID];
+    [self.delegate updateNote:self.descriptionTextView.text withTitle:self.titleTextField.text objectId:_currentID latitude:_currentLat longitude:_currentLong];
     
 }
 
 //IBAction to change description property of  _currentNote if corresponding textView is changed
 -(void)textViewDidChange:(UITextView *)textView {
     _currentDescription = self.descriptionTextView.text;
-    [self.delegate updateNote:self.descriptionTextView.text withTitle:self.titleTextField.text objectId:_currentID];
+    [self.delegate updateNote:self.descriptionTextView.text withTitle:self.titleTextField.text objectId:_currentID latitude:_currentLat longitude:_currentLong];
     
 }
 
@@ -102,15 +100,13 @@
     NSLog(@"lat = %f, long = %f", pin.coordinate.latitude, pin.coordinate.longitude);
     [self.mapView addAnnotation:pin];
     MKCoordinateRegion region = { { 0.0f, 0.0f }, { 0.0f, 0.0f } };
-    //region.center = location.coordinate;
     region.center = _currentLocation.coordinate;
     region.span.longitudeDelta = 0.15f;
     region.span.latitudeDelta = 0.15f;
     [self.mapView setRegion:region animated:YES];
     
     
-    //[self.mapView removeObserver:pin forKeyPath:@"coordinate"];
-}
+    }
 
 // preparation for segue from tableView to noteView
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender

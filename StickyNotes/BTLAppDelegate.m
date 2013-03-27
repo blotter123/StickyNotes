@@ -36,12 +36,6 @@
     
     
     NSManagedObjectContext *context = [self managedObjectContext];
-    Note *note = [NSEntityDescription
-                                      insertNewObjectForEntityForName:@"Note"
-                                      inManagedObjectContext:context];
-    note.noteTitle = @"Test Note";
-    note.noteDescription = @"Test Description";
-    
     NSError *error;
     if (![context save:&error]) {
         NSLog(@"Whoops, couldn't save: %@", [error localizedDescription]);

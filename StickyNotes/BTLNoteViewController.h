@@ -16,7 +16,7 @@
 
 @optional
 
-- (void)updateNote:(NSString*)descriptionString withTitle:(NSString *)titleString objectId:(NSManagedObjectID *)objId;
+- (void)updateNote:(NSString*)descriptionString withTitle:(NSString *)titleString objectId:(NSManagedObjectID *)objId latitude:(NSNumber*)lat longitude:(NSNumber*)lon;
 
 @end
 
